@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
+  border-radius: .7rem;
+  transition: all .15s ease-in-out;
+  user-select:none;
+}
+.btn:focus,
+.btn:active,
+.btn:hover {
+  box-shadow: 1px 1px 15px rgba(124, 226, 252, .3);
+}
+
+.btn-primary {
+  background-color: var(--color-blue-700);
+  border-color:var(--color-blue-300);
+  color: var(--color-blue-200);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+  background-color: var(--color-blue-800);
+  color:var(--color-blue-100);
+}
+
+btn.disabled {
+  cursor:not-allowed;
+  opacity:.7;
+}
